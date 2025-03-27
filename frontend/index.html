@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賀!劉蛋23歲生日!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="birthday-card">
+            <h1>賀!劉蛋23歲生日!</h1>
+            <img src="friend_photo.jpg" alt="朋友的照片" class="photo">
+            
+            <div id="balloon-container"></div>
+
+            <div id="balloon-count">
+                🎈 累計氣球數量: <span id="balloon-counter">0</span>
+            </div>
+            
+            <button class="balloon-btn" onclick="addBalloon()">🎈 放一個氣球</button>
+            
+            <!-- 新增「到此一遊」輸入框 -->
+            <div class="visited-container">
+                <input type="text" id="visited-input" placeholder="say something" maxlength="20">
+                <button class="visited-btn" onclick="addVisited()">送出</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

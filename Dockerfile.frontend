@@ -1,0 +1,9 @@
+FROM nginx:alpine
+
+# 清除預設 index 頁面
+RUN rm -rf /usr/share/nginx/html/*
+
+# 將你的前端網站複製進 nginx 的網頁根目錄
+COPY frontend/ /usr/share/nginx/html/
+
+EXPOSE 80
